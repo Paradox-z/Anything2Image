@@ -8,6 +8,7 @@ pipe = StableUnCLIPImg2ImgPipeline.from_pretrained(
     "stabilityai/stable-diffusion-2-1-unclip", torch_dtype=torch.float16
 )
 pipe = pipe.to(device)
+# CHECK pipe function here
 
 model = ib.imagebind_huge(pretrained=True)
 model.eval()
